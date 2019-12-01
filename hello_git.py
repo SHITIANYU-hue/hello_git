@@ -1,7 +1,6 @@
-import matplotlib.pyplot as plt
-import matplotlib as mpl
-import numpy as np
+def make_repeat(n):
+        return lambda s : s * n
 
-x = np.linspace(0, 20, 100)  # 创建在一定范围内间隔均匀数字列表
-plt.plot(x, np.sin(x))       # 绘制每个x点的正弦值
-plt.show()                   # 显示列表
+double = make_repeat(2)
+print(double(8))
+print(double('FishC'))
